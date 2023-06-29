@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+/* selector universal */
+*{
+    font-family: 'Roboto', sans-serif;
+    /* reset */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1{ 
+    color: rgba(10, 9, 7, 0.671);
+    /* 1em ---- 16px aprox */
+    font-size: 2em; /* son 20px */
+}
+  
+ /* selector descendente */
+
+.botonera{
+    background-color: rgb(218, 183, 143);
+    padding: 6px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+    .botonera img{
+    width: 150px;
+    }
+
+        .botonera ul{
+            /* display */
+            /* display: inline-block; */
+            list-style: none;
+            display: flex;
+        }
+
+            .botonera ul li{
+                /* margin*/
+                margin-right:30px;
+            } 
+
+                .botonera ul li a{ 
+                    text-decoration: none;
+                    color: rgb(19, 11, 11);
+                    font-size: 1.8rem;
+                }
+
+                    .botonera svg{
+                        width: 70px;
+                        height: 25px;
+                        margin-right: 10px; 
+                    }
+
+.contenedor2{
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buscador{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(82, 81, 81, 0.151);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 5px 20px;
+}
+
+    .buscador input{
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        font-size: 15px;
+    }
+
+        
+header img{
+/* width */
+    width: 100%;
+}
+
+
+.images{
+    width: 100px;
+    height: 75px;
+}
+
+.image{
+    width: 400px;
+    height: 500px;
+}
+
+.tapon img{
+    width: 100%;
+    height: 900px;
+}
+
+/* selector de grupo*/
+
+
+.container-fluid.py-2{
+    background-image: url(../img/CriolloNosotros.jpg);  
+    padding-left: 40px;
+    padding-right: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+
+.iframe-contact{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.btn.bg-orange{
+    color: rgb(252, 248, 247);
+    border-radius: 5px;
+    border-color: rgba(128, 128, 128);
+    background-color: rgba(128, 128, 128, 0.589);
+    font-size: 1.6rem;
+}   
+
+form label{
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    display: block;
+}
+
+
+main img {
+    width: 100%;
+}
+
+h2, h3{
+    margin-bottom: 70px;
+}
+
+h1{ 
+    color: white;
+    font-size: 30px;    
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2{ 
+    color: rgba(5, 4, 4);
+    font-size: 30px;    
+    text-align: left;
+    padding-left: 20px;
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 30px;    
+    text-align: center;
+} 
+
+h4{
+    color: rgb(255, 255, 255);
+    font-size: 20px;    
+    text-align: center;
+}
+
+h5{
+    color: white;
+    font-size: 30px;    
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: rgb(22, 22, 22);
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2,4rem;
+   /* font-style: italic; */
+}
+
+#ingredientes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    padding: 2px 5px;
+}
+
+    #ingredientes figure{
+        width: 20%;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+        #ingredientes figure img{
+            display: block;
+            margin: auto;
+            height: auto;
+        }
+
+        #ingredientes figure figcaption{
+            color: black;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+            #ingredientes figure p{
+                font-size: 1.4em;
+                margin-bottom: 20px;
+                line-height: 1.4;
+            }
+
+.promos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    padding: 2px 5px;
+}
+
+    .promos figure{
+        width:20%;
+        padding: 0 20px;
+    }
+
+        .promos figure figcaption{
+            color: black;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+            .promos figure p{
+                font-size: 1.4em;
+                margin-bottom: 20px;
+                line-height: 1.4;
+            }
+    
+table{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}            
+
+iframe{
+    position: relative;
+}
+
+footer{
+    color: rgb(77, 76, 76);
+    background-color: rgba(77, 72, 72, 0.226);
+    padding: 30px;
+}
+
+    footer svg{
+        width: 40px;
+        height: 25px;
+        margin-right: 10px;        
+    }
+
+.whatsapp{
+    position: fixed;
+    right: 80px;
+    bottom: 80px;
+    width: 40px;
+    height: 25px;
+}
+/* selector de clase */
+
+.text-black{
+    color: rgb(26, 25, 25);
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* selector de ID */
+#productos{
+    /* propiedades */  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    padding: 20px 50px;
+}
+
+    #productos figure{
+        width: 33%;
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+        #productos figure img{
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        
+        #productos figure figcaption{
+            color: black;
+            font-size: 2.4em;
+        }
+
+        #productos figure p{
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+#about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 450px);
+    grid-template-areas: 
+    "contenedor contenedor" 
+    "about2 about3" 
+    "about2 about3";
+}
+ 
+    #about img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #about .contenedor{
+        /*Box model - width - height - margin- padding - border*/
+        grid-area: contenedor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../img/Tapon.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #about .contenedor p{
+        color: white;
+        width: 50%;
+        font-size: 2.5em;
+        line-height: 1.4;
+    }
+
+    #about .about2{
+        grid-area: about2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(127, 132, 131);
+    }
+
+    #about .about2 p{
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: white;
+        width: 50%;
+        line-height: 1.4;
+        font-size: 1.4em;
+    }
+
+    #about .about3{
+        grid-area: about3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(25, 28, 27);
+    }
+
+    #about .about3 p{
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: white;
+        width: 50%;
+        line-height: 1.4;
+        font-size: 1.6em;
+    }
+
+/*  inicia responsive */
+@media (width > 768px){
+    #productos figure{
+        width: 50%;
+    }
+    .iframe{
+      position: relative;
+      
+    }
+    footer{
+        width: 100%;
+    }
+}    
+@media (width < 768px){
+    nav{
+        flex-direction: column;
+    }
+    #ingredientes{
+        flex-direction: column;
+        align-items: center;
+    }
+    #productos{
+        flex-direction: column;
+        align-content: center;
+    }
+    #productos figure{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .promos figure{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    footer{
+        width: 100%;
+    }
+    /* about */
+    #about .contenedor h1{
+        padding-top: 30px;
+    }
+    #about .contenedor p{
+        width: auto;
+        padding: 30px 20px;
+    }
+    #about{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "contenedor"
+        "about2"
+        "about3";
+    }
+    .iframe{
+        position: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (width < 433px){
+    .promos figure img{
+        width: 250px;
+        object-fit: cover;
+    }
+}

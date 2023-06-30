@@ -129,6 +129,7 @@ header img{
     border-color: rgba(128, 128, 128);
     background-color: rgba(128, 128, 128, 0.589);
     font-size: 1.6rem;
+    margin-bottom: 20px;
 }   
 
 form label{
@@ -189,6 +190,7 @@ p{
 }
 
 #ingredientes{
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -198,7 +200,7 @@ p{
 
     #ingredientes figure{
         width: 20%;
-        padding: 0 20px;
+        padding: 0 5px;
         text-align: center;
     }
 
@@ -410,9 +412,12 @@ footer{
     nav{
         flex-direction: column;
     }
-    #ingredientes{
-        flex-direction: column;
-        align-items: center;
+    #ingredientes figure{
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 40px;
+        margin-inline-end: 40px;
     }
     #productos{
         flex-direction: column;
@@ -455,5 +460,15 @@ footer{
     .promos figure img{
         width: 250px;
         object-fit: cover;
+    }
+}
+@media (width < 336px){
+    .botonera{
+        position: relative;
+        padding: 6px 0px;
+    }
+    .images{
+        width: 80px;
+        height: 75px;
     }
 }

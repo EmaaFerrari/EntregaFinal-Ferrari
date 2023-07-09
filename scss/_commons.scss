@@ -1,0 +1,104 @@
+//todo lo general del proyecto
+*{
+    font-family: $mainFont;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1{ 
+    color: $white;
+    font-size: 30px;    
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2{ 
+    color: $keyColor;
+    font-size: 30px;    
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 70px;
+}
+
+h3{
+    color: $white;
+    font-size: 30px;    
+    text-align: center;
+    margin-bottom: 70px;
+} 
+
+h4{
+    color: $white;
+    font-size: 20px;    
+    text-align: center;
+}
+
+h5{
+    color: $white;
+    font-size: 30px;    
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: $keyColor;
+    font-weight: $textLight;
+    font-size: $textXl;
+    line-height: 2,4rem;
+}
+
+iframe{
+    position: relative;
+}
+
+footer{
+    color: rgb(77, 76, 76);
+    background-color: rgba(77, 72, 72, 0.226);
+    padding: 30px;
+    svg{
+        width: 40px;
+        height: 25px;
+        margin-right: 10px; 
+    }
+}
+
+.whatsapp{
+    position: fixed;
+    right: 80px;
+    bottom: 80px;
+    width: 40px;
+    height: 25px;
+}
+
+.text-black{
+    color: $keyColor;
+}
+
+.text-center{
+    text-align: center;
+}
+
+main img {
+    width: 100%;
+}
+
+header img{
+    width: 100%;
+}
+    
+    
+.images{
+    width: 100px;
+    height: 75px;
+}
+    
+.image{
+    width: 400px;
+    height: 500px;
+}

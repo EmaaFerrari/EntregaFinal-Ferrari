@@ -1,0 +1,27 @@
+.container-fluid.py-2{
+    background-image: url(../img/CriolloNosotros.jpg);  
+    padding-left: 40px;
+    padding-right: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.iframe-contact{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.btn.bg-orange{
+    color: $white;
+    border-radius: 5px;
+    border-color: rgba(128, 128, 128);
+    background-color: rgba(128, 128, 128, 0.589);
+    font-size: $textLg;
+    margin-bottom: 20px;
+}   
+
+form label{
+    color: $white;
+    font-size: $textLg;
+    display: block;
+}

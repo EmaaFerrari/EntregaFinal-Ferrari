@@ -1,0 +1,77 @@
+@media (width > 768px){
+    #productos figure{
+        width: 50%;
+    }
+    .iframe{
+      position: relative;
+      
+    }
+    footer{
+        width: 100%;
+    }
+}  
+
+@media (width < 768px){
+    nav{
+        flex-direction: column;
+    }
+    #ingredientes figure{
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 40px;
+        margin-inline-end: 40px;
+    }
+    #productos{
+        flex-direction: column;
+        align-content: center;
+        figure{
+            width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+    .promos figure{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    footer{
+        width: 100%;
+    }
+    #about .contenedor h1{
+        padding-top: 30px;
+    }
+    #about .contenedor p{
+        width: auto;
+        padding: 30px 20px;
+    }
+    #about{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "contenedor"
+        "about2"
+        "about3";
+    }
+    .iframe{
+        position: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (width < 433px){
+    .promos figure img{
+        width: 250px;
+        object-fit: cover;
+    }
+}
+
+@media (width < 336px){
+    .botonera{
+        position: relative;
+        padding: 6px 0px;
+    }
+    .images{
+        width: 80px;
+        height: 75px;
+    }
+}

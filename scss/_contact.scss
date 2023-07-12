@@ -18,6 +18,9 @@
     background-color: rgba(128, 128, 128, 0.589);
     font-size: $textLg;
     margin-bottom: 20px;
+    :hover{
+        color: $keyColor;
+    }
 }   
 
 form label{

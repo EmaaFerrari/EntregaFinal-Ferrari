@@ -18,6 +18,16 @@
                 text-decoration: none;
                 color: $keyColor;
                 font-size: 1.8rem;
+                :hover{
+                    transform: scale(1.1);
+                    ::after{
+                        content: "";
+                        height: 2px;
+                        width: 100%;
+                        background: $keyColor;
+                        display: block;
+                    }
+                }
             }
         }
     }
@@ -25,6 +35,9 @@
         width: 70px;
         height: 25px;
         margin-right: 10px;
+        :hover{
+            transform: scale(1.6);
+        }
     }
 }
 

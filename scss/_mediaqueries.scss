@@ -1,6 +1,9 @@
 @media (width > 768px){
     #productos figure{
         width: 50%;
+        img{
+            height: 500px;
+        }
     }
     .iframe{
       position: relative;

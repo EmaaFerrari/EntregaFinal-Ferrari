@@ -126,10 +126,23 @@ header img {
   color: rgb(17, 17, 17);
   font-size: 1.8rem;
 }
+.botonera ul li a:hover {
+  transform: scale(1.1);
+}
+.botonera ul li a:hover::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: rgb(17, 17, 17);
+  display: block;
+}
 .botonera svg {
   width: 70px;
   height: 25px;
   margin-right: 10px;
+}
+.botonera svg:hover {
+  transform: scale(1.6);
 }
 
 .contenedor2 {
@@ -169,6 +182,9 @@ header img {
   padding: 0 20px;
   margin-bottom: 30px;
 }
+#productos figure:hover {
+  transform: scale(1.1);
+}
 #productos figure img {
   display: block;
   margin: auto;
@@ -198,6 +214,9 @@ table {
 .promos figure {
   width: 20%;
   padding: 0 20px;
+}
+.promos figure:hover {
+  transform: scale(1.1);
 }
 .promos figure figcaption {
   color: rgb(17, 17, 17);
@@ -331,6 +350,9 @@ table {
   font-size: 1.6em;
   margin-bottom: 20px;
 }
+.btn.bg-orange:hover {
+  color: rgb(17, 17, 17);
+}
 
 form label {
   color: rgb(253, 245, 245);
@@ -341,6 +363,9 @@ form label {
 @media (width > 768px) {
   #productos figure {
     width: 50%;
+  }
+  #productos figure img {
+    height: 500px;
   }
   .iframe {
     position: relative;

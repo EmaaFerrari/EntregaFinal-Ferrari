@@ -46,6 +46,11 @@ h5 {
   margin-bottom: 10px;
 }
 
+h6 {
+  color: rgb(17, 17, 17);
+  font-size: 60px;
+}
+
 p {
   color: rgb(17, 17, 17);
   font-weight: 300;
@@ -360,6 +365,112 @@ form label {
   display: block;
 }
 
+.main {
+  overflow: hidden;
+}
+
+.home {
+  background-color: rgb(218, 183, 143);
+  padding: 9rem 0 2rem;
+  height: 100vh;
+  display: grid;
+}
+
+.home__container {
+  display: grid;
+  align-content: center;
+  row-gap: 2.5rem;
+}
+
+.home__data {
+  text-align: center;
+}
+
+.home__subtitle {
+  display: block;
+  font-size: 2em;
+}
+
+.home__title {
+  margin: 0.75rem 0;
+}
+
+.home__button {
+  font-size: 1.6em;
+  margin-top: 2rem;
+  display: inline-block;
+  background-color: rgb(17, 17, 17);
+  color: rgb(253, 245, 245);
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  transition: 0.4s;
+}
+.home__button :hover {
+  box-shadow: 0 4px 12px hsla(38, 69%, 8%, 0.2);
+}
+
+.home__img img {
+  width: 230px;
+  animation: floaty 1.8s infinite alternate;
+}
+
+.home__img {
+  justify-self: center;
+}
+
+.home__shadow {
+  width: 130px;
+  height: 24px;
+  background-color: hsla(38, 21%, 19%, 0.16);
+  margin: 0 auto;
+  border-radius: 50%;
+  filter: blur(7px);
+  animation: shadow 1.8s infinite alternate;
+}
+
+.container2 {
+  max-width: 1024px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+@keyframes floaty {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+@keyframes shadow {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0.85, 0.85);
+  }
+}
+@media (width > 991px) {
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+  }
+  .home__data {
+    text-align: initial;
+  }
+  .home__img img {
+    width: 400px;
+  }
+  .home__shadow {
+    width: 250px;
+    height: 40px;
+  }
+  .container2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media (width > 768px) {
   #productos figure {
     width: 50%;
@@ -417,10 +528,9 @@ form label {
     flex-wrap: wrap;
   }
 }
-@media (width < 433px) {
-  .promos figure img {
-    width: 250px;
-    object-fit: cover;
+@media (width < 344px) {
+  .home__img img {
+    width: 160px;
   }
 }
 @media (width < 336px) {

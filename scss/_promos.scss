@@ -1,0 +1,31 @@
+.promos__fondo{
+    background-image: url(../img/Promo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.promos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    padding: 2px 5px;
+    figure{
+        width:20%;
+        padding: 0 20px;
+        :hover{
+            transform: scale(1.1);
+        }
+        figcaption{
+            color: $keyColor;
+            font-size: $textXl;
+            margin-bottom: 20px;
+            color: $white;
+        }
+        p{
+            font-size: $textMd;
+            margin-bottom: 20px;
+            line-height: 1.4;
+            color: $white;
+        }
+    }
+}

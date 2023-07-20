@@ -7,15 +7,16 @@
 .container_img{
     display: block;
     margin: auto;
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
-    padding: 50px 130px;
+    padding: 50px 13px;
 }
 
 .container_info_product{
     display: flex;
     flex-direction: column;
-    padding: 80px;
+    padding: 180px;
+    padding-top: 70px;
     h2{
         margin-left: -22px;
         margin-bottom: 25px;
@@ -90,11 +91,21 @@
     font-size: $textXl;
     line-height: 30px;
     color: $keyColor;
+    font-weight: 400;
 }
 
-.container_aditional_information span{
-    font-size: 15px;
-    padding-bottom: 20px;
+.container_aditional_information{
+    margin-top: 10px;
+    color: $keyColor;
+    font-weight: 700;
+    span{
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+}
+
+.sku{
+    font-weight: 500;
 }
 
 .container_related_products h2{

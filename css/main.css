@@ -203,7 +203,7 @@ header img {
   outline: none;
   font-size: 15px;
 }
-.buscador::placeholder {
+.buscador ::placeholder {
   color: rgb(17, 17, 17);
 }
 

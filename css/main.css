@@ -1,4 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+.btn_add_to_cart, .btn_promo {
+  border: none;
+  border-radius: 35px;
+  padding: 10px;
+  color: rgb(17, 17, 17);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn_add_to_cart:hover, .btn_promo:hover {
+  background-color: rgb(218, 183, 143);
+}
+
+.btn_promo {
+  background-color: orangered;
+  color: rgb(253, 245, 245);
+}
+.btn_promo:hover {
+  background-color: rgb(17, 17, 17);
+  color: rgb(253, 245, 245);
+}
+
+h1 {
+  color: rgb(253, 245, 245);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h3 {
+  color: rgb(253, 245, 245);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -14,25 +53,11 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  color: rgb(253, 245, 245);
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 h2 {
   color: rgb(17, 17, 17);
   font-size: 30px;
   text-align: left;
   padding-left: 20px;
-  margin-bottom: 70px;
-}
-
-h3 {
-  color: rgb(253, 245, 245);
-  font-size: 30px;
-  text-align: center;
   margin-bottom: 70px;
 }
 
@@ -177,6 +202,9 @@ header img {
   border: 0;
   outline: none;
   font-size: 15px;
+}
+.buscador::placeholder {
+  color: rgb(17, 17, 17);
 }
 
 #productos {
@@ -436,22 +464,6 @@ form label {
   height: 100%;
   font-size: 1.4em;
   color: rgb(17, 17, 17);
-}
-
-.btn_add_to_cart {
-  border: none;
-  border-radius: 35px;
-  padding: 10px;
-  color: rgb(17, 17, 17);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  font-weight: 700;
-  cursor: pointer;
-}
-.btn_add_to_cart:hover {
-  background-color: rgb(218, 183, 143);
 }
 
 .container_description {

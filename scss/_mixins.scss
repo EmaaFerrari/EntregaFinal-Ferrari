@@ -1,43 +1,42 @@
-// // extends
-//.bt-gral{
-//    width: 200px;
-//    height: 30px;
-//    display: flex;
-//    justify-content: center;
-//    align-items: center;
-//    padding: 4px 8px;
-//    background-color: $mainColor;
-//}
+// extend
+.btn_add_to_cart{
+    border: none;
+    border-radius: 35px;
+    padding: 10px;
+    color: $keyColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    :hover{
+        background-color: $mainColor;
+    }
+}
 
-//.bt-rounded{
-//    @extend.bt-gral;
-//    border-radius: 4px;
-//
+.btn_promo{
+    @extend .btn_add_to_cart;
+    background-color: orangered;
+    color: $white;
+    :hover{
+        background-color: $keyColor;
+        color: $white;
+    }
+}
 
-// // mixin
-//@mixin textos($size,$line,$color,$padding){
-//    font-size: $size; //variable local
-//    line-height: $line; //variable local
-//    color: $color; //variable local
-//    padding: $padding; //variable local
-//    font-family: $mainFont; //variable global
-//    @if $align == center{text-align: center;}
-//    @else if $align == left{text-align: left;}
-//    @else if $align == right{text-align: right;}
-//}
+// mixin
+@mixin titulos($color,$size,$aling,$margin){
+    color: $color;
+    font-size: $size;
+    text-align: $aling;
+    margin-bottom: $margin;
+}
 
-//.text-tienda{
-//    @include textos(1.1em, 1.4em, black, 10px)
-//}
+h1{
+    @include titulos($white, 30px, center, 40px)
+}
 
-//@mixin flex($dire,$justify,$align,$wrap){
-//display: flex;
-//    flex-direction: $dire;
-//    justify-content: $justify;
-//    align-items: $align;
-//    flex-wrap: $wrap;
-//}
-
-//.box-one{
-//    @include flex(row. center. flex-end, wrap)
-//}
+h3{
+    @include titulos($white, 30px, center, 70px)
+}

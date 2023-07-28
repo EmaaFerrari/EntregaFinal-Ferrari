@@ -38,11 +38,11 @@ Todas las páginas fueron seteadas para ser responsive utilizando sass para darl
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/GoDaddy_logo.svg/1280px-GoDaddy_logo.svg.png)
 
 ### Links:
-Link del deployment: https://emaaferrari.github.io/EntregaFinal-Ferrari/
+Link del deployment: https://emaaferrari.github.io/EntregaFinal-Ferrari
 
 Link del repo: https://github.com/EmaaFerrari/EntregaFinal-Ferrari
 
-Dominio del sitio: https://criollogin.com/
+Dominio del sitio: https://criollogin.com
 
 Link de Netlify: https://app.netlify.com/teams/emaaferrari/overview
 
